@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
+article {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  box-shadow: 1px 1px grey;
+  width: 43vw;
+}
+
+img {
+  width: 43vw;
+  border-radius: 20px 20px 0;
+}
