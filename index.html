@@ -33,7 +33,7 @@
           assumenda sapiente fuga? Vero!
         </section>
         <section class="selectors">
-          <p class="price">$65 USD</p>
+          <p class="price-tag">$65 USD</p>
           <label for="size-select">Size: </label>
           <select name="size" id="size-select">
             <option value="6">6</option>
@@ -42,12 +42,29 @@
           <select name="quantity" id="quantity-select">
             Quantity
           </select>
-          <label for="color-selector">Color: </label>
-          <input type="radio" id="color-select" />
-          <label for="color-selector"></label>
-          <input type="radio" id="color-select" />
-          <label for="color-selector"></label>
-          <input type="radio" id="color-select" />
+          <section class="color-selector-container">
+            <label for="color-selector">Color: </label>
+            <input
+              type="radio"
+              class="color-select"
+              id="asics-blue"
+              name="color-select"
+              checked
+            />
+            <input
+              type="radio"
+              class="color-select"
+              id="asics-red"
+              name="color-select"
+            />
+            <input
+              type="radio"
+              class="color-select"
+              id="asics-black"
+              name="color-select"
+            />
+            <button>Add to card</button>
+          </section>
         </section>
       </article>
       <article>
@@ -64,7 +81,42 @@
           maxime commodi labore corrupti dolores cumque? Nemo labore porro
           assumenda sapiente fuga? Vero!
         </section>
-        <section class="option-cart"></section>
+        <section class="option-cart">
+          <section class="selectors">
+            <p class="price-tag">$30 USD</p>
+            <label for="size-select">Size: </label>
+            <select name="size" id="size-select">
+              <option value="6">6</option>
+            </select>
+            <label for="quantity-select-2">Quantity: </label>
+            <select name="quantity" id="quantity-select-2">
+              Quantity
+            </select>
+            <section class="color-selector-container">
+              <label for="color-selector">Color: </label>
+              <input
+                type="radio"
+                class="color-select"
+                id="adidas-greenblack"
+                name="color-select"
+                checked
+              />
+              <input
+                type="radio"
+                class="color-select"
+                id="adidas-blueblack"
+                name="color-select"
+              />
+              <input
+                type="radio"
+                class="color-select"
+                id="adidas-pinkblack"
+                name="color-select"
+              />
+              <button>Add to card</button>
+            </section>
+          </section>
+        </section>
       </article>
       <article>
         <header>
@@ -79,7 +131,36 @@
           illum harum officia fugit quos consequatur recusandae temporibus
           maxime commodi labore corrupti dolores cumque? Nemo labore porro
           assumenda sapiente fuga? Vero!
-          <section class="option-cart"></section>
+          <section class="option-cart">
+            <section class="selectors">
+              <p class="price-tag">$45 USD</p>
+              <label for="size-select-3">Size: </label>
+              <select name="size" id="size-select-3">
+                <option value="6">6</option>
+              </select>
+              <label for="quantity-select-3">Quantity: </label>
+              <select name="quantity" id="quantity-select-3">
+                Quantity
+              </select>
+              <section class="color-selector-container">
+                <label for="color-selector">Color: </label>
+                <input
+                  type="radio"
+                  class="color-select"
+                  id="newbalanace-redwhite"
+                  name="color-select"
+                  checked
+                />
+                <input
+                  type="radio"
+                  class="color-select"
+                  id="newbalance-blackwhite"
+                  name="color-select"
+                />
+                <button>Add to card</button>
+              </section>
+            </section>
+          </section>
         </section>
       </article>
     </main>
