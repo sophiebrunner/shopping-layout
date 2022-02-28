@@ -9,8 +9,12 @@ html {
 }
 
 body {
-  width: 100%;
   margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
 }
 
 article {
@@ -75,7 +79,8 @@ h2 {
   grid-area: color1;
   width: 120px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 5px;
   align-items: center;
   margin-left: 10px;
 }
