@@ -24,44 +24,68 @@ article {
 img {
   width: 400px;
   border-radius: 20px 20px 0 0;
-  position: relative;
-  z-index: 0;
-  background-image: linear-gradient(to bottom, transparent 10%, white);
-  background-size: 100%;
 }
 
 h2 {
-  margin: 0.3em;
+  margin: 10px;
 }
 
 .product-description {
-  margin: 0.5em;
+  margin: 10px;
   color: lightgray;
 }
 
 .selectors {
-  background-color: lightgray;
-  margin: 10px 5px 10px 5px;
   padding: 5px 2.5px 5px 2.5px;
   border-radius: 20px;
+  margin: 10px;
+  display: grid;
+  grid-template: 1fr 30px 30px 1fr / repeat(2, 1fr);
+  grid-template-areas:
+    "pricetag pricetag"
+    "size quantity"
+    "color1 ."
+    "card card";
+  background-color: lightgray;
 }
 
 .price-tag {
-  background-color: white;
-  margin: 15px;
-  padding: 8px;
+  grid-area: pricetag;
   border-radius: 3px;
+  margin: 10px;
   text-align: center;
+  background-color: white;
   color: black;
+}
+
+.size-select {
+  grid-area: size;
+  margin-left: 10px;
 }
 
 .color-select {
   all: unset;
-  display: inline-block;
   width: 20px;
   height: 20px;
   border: 1px solid black;
   border-radius: 50%;
+}
+
+.color-selector-container {
+  grid-area: color1;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.color-select:checked {
+  border: 1px solid white;
+}
+
+.quantity-select {
+  grid-area: quantity;
 }
 
 #asics-blue {
@@ -88,23 +112,25 @@ h2 {
   background-image: linear-gradient(to right, pink 50%, black 50%);
 }
 
-.color-select:checked {
-  border-radius: 1px solid green;
+#newbalance-redwhite {
+  background-image: linear-gradient(to right, red 50%, white 50%);
 }
 
-[for="size-select"] {
-  margin-left: 15px;
+#newbalance-blackwhite {
+  background-image: linear-gradient(to right, black 50%, white 50%);
+}
+
+.shop-success {
+  border-radius: 3px;
+  grid-area: card;
+  background-color: darkblue;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
 button {
   all: unset;
-  display: block;
-  background-color: dodgerblue;
-  width: 88%;
-  margin: 15px;
-  padding: 8px;
-  cursor: pointer;
-  text-align: center;
-  border-radius: 3px;
-  color: black;
 }
